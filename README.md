@@ -31,7 +31,10 @@ Two emergency accounts were created with the following properties:
 | bg-admin-01@AcmeHealthServices.onmicrosoft.com | Global Administrator | Yes | 32+ characters, never expires | None |
 | bg-admin-02@AcmeHealthServices.onmicrosoft.com | Global Administrator | Yes | 32+ characters, never expires | None |
 
-📸 **Screenshot:** `Screenshots/break-glass-role.png`  
+📸  **Break-Glass Role Assignment:**
+
+![Break-Glass Role](Screenshots/break-glass-role.png)
+
 
 **Notes:**  
 - These accounts bypass normal group-based access controls.  
@@ -48,7 +51,9 @@ Groups were created to enforce least-privilege access:
 | HelpDeskAdmins      | User Administrator   | helpdesk.user, hr.user                          |
 | AppAdmins           | Application Admin    | dev.user, cloud.eng                             |
 
-📸 **Screenshot:** `Screenshots/group-role-assignment.png`  
+📸  **Group Role Assignment:**
+
+![Group Role Assignment](Screenshots/group-role-assignment.png)  
 
 **Notes:**  
 - Membership type is **Assigned**.  
@@ -64,7 +69,9 @@ Conditional Access policy was implemented to enforce MFA for all privileged user
 - Excludes break-glass accounts  
 - Enforces MFA for all sign-ins to any cloud app  
 
-📸 **Screenshot:** `Screenshots/conditional-access-mfa.png`  
+📸 **Conditional Access + MFA:**
+
+![Conditional Access MFA](Screenshots/conditional-access-mfa.png)
 
 **Notes:**  
 - MFA ensures secure authentication for sensitive accounts.  
@@ -78,7 +85,9 @@ Logging is enabled to monitor activity for all privileged users:
 - **Audit Logs:** Track directory changes such as user creation, role assignments, and password resets.  
 - **Sign-in Logs:** Record sign-ins by privileged accounts, including timestamp, location, device, and status.  
 
-📸 **Screenshot:** `Screenshots/audit-logs.png`  
+📸 **Audit Logs:**
+
+![Audit Logs](Screenshots/audit-logs.png) 
 
 **Notes:**  
 - Alerts for unusual sign-ins were recommended but not implemented in this version.  
