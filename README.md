@@ -101,11 +101,11 @@ This setup is **resume-ready** and demonstrates hands-on skills for IAM and cybe
 ## **Screenshots Folder**
 All screenshots referenced above are located in the `Screenshots/` folder:
 
-Screenshots/
-├─ break-glass-role.png
-├─ group-role-assignment.png
-├─ conditional-access-mfa.png
-└─ audit-logs.png
+Screenshots/  
+├─ break-glass-role.png  
+├─ group-role-assignment.png  
+├─ conditional-access-mfa.png  
+└─ audit-logs.png  
 
 
 ---
